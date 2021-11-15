@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+  transition: .4s all;
+}
+
+body {
+  background: #fff;
+  color: #0f4646;
+  font-family: 'Lato', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.steps {
+  background: #fff;
+  max-width: 400px;
+  min-width: 280px;
+  width: calc(100vw - 20px);
+  height: 20px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step {
+    width: 8px;
+    height: 8px;
+    background: #b7b7b7;
+    border-radius: 20px;
+}
+
+.step1 {
+  margin-left: 10px;
+}
+
+.step3 {
+  margin-right: 10px;
+}
+
+.line {
+  width: 33%;
+  height: 1px;
+  background: #e1e1e1;
+}
+
+.form-fields {
+  background: #ffffff;
+  max-width: 700px;
+  min-width: 300px;
+  width: calc(100vw - 20px);
+  margin: 20px 0;
+  box-shadow: 0px 1px 7px 0px rgba(18, 57, 76, 0.1);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form-group1 {
+  padding: 10px 0;
+}
+
+.input-wrapper {
+  position: relative;
+  max-width: 400px;
+  min-width: 300px;
+  margin: auto;
+  
+  label {
+    position: absolute;
+    top: 22px;
+    left: 9px;
+    border-right: 1px solid #dbdbdb;
+    width: 60px;
+    color: #28a9e9;
+    border-radius: 5px 0 0 5px;
+    line-height: 22px;
+  }
+  
+  p {
+    font-size: 12px;
+    margin: auto;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    color: #ff2b2b;
+    text-align: right;
+    background: #ffffff;
+    width: calc(100% - 10px);
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 29px;
+    right: 17px;
+    font-size: 12px;
+  }
+  
+  .fa-check {
+    color: #48EF80;
+  }
+  
+  .fa-exclamation-triangle {
+    color: #ff2b2b;
+  }
+}
+
+label {
+  display: block;
+}
+
+.input-field {
+  width: calc(100% - 10px);
+	background: #fff;
+  border-radius: 5px;
+  outline: 0;
+  padding-left: 75px;
+  padding-right: 35px;
+  height: 48px;
+  margin: 10px 0;
+  border: 1px solid #eeeeee;
+}
+
+.btn {
+  color: white;
+  border: none;
+  padding: 15px 0;
+  width: 95px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px 0px rgba(18, 57, 76, 0.19);
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.btn-primary {
+  background: #4082ff;
+  float: right;
+}
+
+.btn-secondary {
+  background: #a7a7a7;
+  float: left;
+}
+
+.question {
+  color: #28a9e9;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+  text-align: -webkit-center;
+  margin: 10px auto;
+  padding: 0;
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  input {
+    display: none;
+  }
+
+  label {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    width: 146px;
+    padding: 7px 0;
+    font-size: 14px;
+    margin: 7px;
+    color: #434343;
+  }
+  
+  label:hover {
+    color: #789;
+    cursor: pointer;
+  }
+  
+  input:checked + label {
+    color: #0af;
+    border: 1px solid;
+  }
+}
+
+.form-group2 {
+  text-align: -webkit-center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+
+  label {
+    border-radius: 50px;
+  }
+  
+  
+}
+
+.form-group3 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  
+  
+  textarea {
+    max-width: 465px;
+    min-width: 280px;
+    width: calc(100vw - 40px);
+    min-height: 100px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    padding: 22px 18px;
+    resize: vertical;
+  }
+  
+  .comments {
+    padding: 10px 0;
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #303030;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+@media screen and (min-width: 555px) {
+  .form-fields {
+    margin: 50px 0;
+  }
+  
+  .form-group1 {
+    padding: 50px 0;
+  }
+  
+  .form-group2 {
+    padding-bottom: 35px;
+    padding-top: 20px;
+  }
+  
+  .form-group3 {
+    padding-bottom: 50px;
+    padding-top: 15px;
+  }
+  
+  .question {
+    padding-top: 25px;
+  }
+}
